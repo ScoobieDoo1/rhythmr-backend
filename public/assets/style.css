@@ -1,0 +1,239 @@
+
+
+:root{
+    --main-radius:var(--main-radius):5px;
+
+}
+*{
+    scroll-behavior: smooth;
+}
+.container{
+    background-color: #9DA2AB;
+    font-family: 'Labrada', serif; 
+    font-size: 1em;
+    color: white;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 5.5fr 3.5fr 4.5fr 45fr 2.3fr 1fr;
+    grid-template-areas: 
+    "nav nav nav "
+    "sidebar main main "
+    "experience experience experience "
+    "project project project "
+    "education education education "
+    "blog blog blog "
+    "contact contact contact "
+    "footer footer footer "
+    ;
+    grid-gap: 0.5rem;
+}
+
+nav{
+    background-color: #183A1D;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: nav;
+    margin-top: -5px;
+    margin-bottom: -10px;
+    
+}
+
+main{
+    background-color: #105652;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: main;
+    margin-left: -8px;
+    padding-right: 60px;
+
+}
+
+#sidebar{
+    background-color: #105652;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: sidebar;
+}
+
+#experience{
+    background-color:#9DA2AB;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: experience;
+    margin-bottom: -10px;
+}
+
+#project{
+    background-color: #9DA2AB;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: project;
+    margin-bottom: -10px;
+}
+
+#education{
+    background-color: #9DA2AB;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: education;
+    margin-bottom: -10px;
+}
+
+#blog{
+    background-color: #183A1D;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: blog;
+    margin-bottom: -10px;
+}
+
+#blog img{
+    height: 300px;
+    max-width: 70%;
+    display: grid;
+    float: left;
+    margin-left: 5.5em;
+    margin-right: 5.5em;
+    margin-bottom: 20px;
+
+    
+}
+    
+#contact{
+    background-color: hotpink;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: contact;
+    margin-bottom: -10px;
+}
+
+footer{
+    background-color: #3C6255;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    grid-area: footer;
+    margin-bottom: -10px;
+    }
+
+nav a{
+    text-decoration: none;
+    margin: 1% 1% 1% 1%;
+    color: #CFD3CE;
+}
+
+h1, h2, h3{
+    color: #F8F4E1;
+    text-align: center;
+}
+
+#sidebar img{
+    min-height: 100%;
+    max-width: 100%;
+    
+
+}
+
+#sidebar{
+    padding:50px 50px 50px 50px;
+    
+}
+
+#contact img{
+    height: 25px;
+    width: 20px;
+}
+#contact{
+    height:200px;
+    width: 100%;
+    background-color: #3C6255;
+    padding-top: 20px;
+    
+}
+
+#contact h4{
+    text-align: center;
+}
+
+#con{
+  
+    height: 150px;
+    width: 50%;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 10px;
+}
+
+#con img{
+    margin-top: 0px;
+   
+    float: left;
+    margin-left: 30px;
+  
+}
+
+#con p{
+    margin-top: 0px;
+    margin-left: 50px;
+    font-weight: bold;
+    
+}
+
+footer{
+    text-align: center;
+    background-color: #183A1D;
+}
+
+button{
+        background-color: #475b5a;
+         font-weight: bold;
+         border-color: #000000;
+         float: right;
+         height: 30px;
+         width: 45px;
+         overflow: auto;
+         margin-right: -30%;  
+          
+}
+
+h2{
+    color: #000000;
+}
+
+h3{
+    color:#000000;
+}
+
+
+
+ P{
+    color: #000000;
+ }
+
+ main p{
+    color:#ffffff;   
+ }
+
+ #blog h2{
+    color: #ffffff;
+ }
+ #blog h3{
+    color: #fff;
+ }
+
+ @media only screen and (max-width:500px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1.5fr 1fr 3.5fr 4.5fr 4fr 2.3fr 1fr 1fr;
+        grid-template-areas: 
+        "nav "
+        "sidebar"
+        "main"
+        "experience  "
+        "project"
+        "education"
+        "blog"
+        "contact"
+        "footer";
+    }
+}

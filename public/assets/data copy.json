@@ -1,0 +1,109 @@
+[{
+"id":1,
+"name":"Acoustic Guitar",
+"category":"string",
+"brand":"Takamine",
+"model":"G5SC",
+"imageUrl":"https://guitariano.com/wp-content/uploads/2019/12/acoustic-guitar-parts-2.jpg",
+"price":800
+},
+
+{
+"id":2,
+"name":"Acoustic Electric Guitar",
+"category":"string",
+"brand":"Ibanez",
+"model":"IE525SC",
+"imageUrl":"https://www.thesoundjunky.com/wp-content/uploads/2017/11/acoustic-electric-guitar-anatomy.jpg",
+"price":1200
+
+},
+
+{
+"id":3,
+"name":"Electric Guitar",
+"category":"string",
+"brand":"Fender",
+"model":"Fe45SC",
+"imageUrl":"https://www.guitarriver.com/wp-content/uploads/2022/03/electric-guitar-anatomy-1024x615.jpg",
+"price":1950
+},
+
+{
+"id":4,
+"name":"Grand Piano",
+"category":"keys",
+"brand":"Lakewood",
+"model":"GR89ie",
+"imageUrl":"https://hellomusictheory.com/wp-content/uploads/2021/02/parts-of-the-piano-1024x683.png.webp",
+"price":2300
+
+},
+
+{
+"id":5,
+"name":"Pearl Drum Set",
+"category":"percussion",
+"brand":"Pearl",
+"model":"RS525SC",
+"imageUrl":"https://media.istockphoto.com/id/146967607/photo/close-up-of-red-drum-set-on-white-background.jpg?s=612x612&w=0&k=20&c=8n3zb9dUq2Jn5Fd3WT8AOvBG94ZiISDdXy5YLssxu30=",
+"price":1100
+    
+},
+
+{
+"id":6,
+"name":"Pearl Cajon",
+"category":"percussion",
+"brand":"Pearl",
+"model":"CJ25SC",
+"imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcrx_zvyKtvK2zYWezOVu7y5iV7LAE8C70oQ&usqp=CAU",
+"price":700
+        
+},
+
+{
+"id":7,
+"name":"Martin Acoustic-Electric Bass Guitar",
+"category":"string",
+"brand":"Martin",
+"model":"BC-16E",
+"imageUrl":"https://cf1.zzounds.com/media/productmedia/fit,600by800/quality,85/1_Full_Straight_Front_NA-9e5f12120087b7a0160f3229bb1c6211.jpg",
+"price":2199
+
+},
+
+{
+"id":8,
+"name":"Fender Bass Guitar",
+"category":"string",
+"brand":"Fender",
+"model":"Feb656",
+"imageUrl":"https://m.media-amazon.com/images/I/51SP8+COmNL._AC_SX679_.jpg",
+"price":299
+
+},
+
+{
+"id":9,
+"name":"Enya Ukulele",
+"category":"string",
+"brand":"Enya",
+"model":"UKU-4535",
+"imageUrl":"https://m.media-amazon.com/images/I/71u1xPA+M8L._AC_SL1500_.jpg",
+"price":130
+
+},
+
+{
+"id":10,
+"name":"Nepali Sarangi",
+"category":"string",
+"brand":"Yuna HandCrafts Nepal",
+"model":"SG-345",
+"imageUrl":"https://i.etsystatic.com/23725784/r/il/e4c47f/4023066366/il_1588xN.4023066366_f169.jpg",
+"price":199
+
+}
+
+]

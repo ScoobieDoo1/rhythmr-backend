@@ -1,0 +1,20 @@
+{
+  "name": "rozes",
+  "version": "1.0.0",
+  "description": "backend app of rhythmr final project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node index.js",
+    "dev": "nodemon index"
+  },
+  "keywords": [
+    "final",
+    "project"
+  ],
+  "author": "rojesh shrestha",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "mongodb": "^5.3.0"
+  }
+}
