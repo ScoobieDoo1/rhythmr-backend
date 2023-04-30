@@ -6,28 +6,28 @@ const path = require('path');   //path
 const { MongoClient } = require('mongodb');
 const uri = "mongodb+srv://rojeshstha1:mfosBjuVFfGvOc8k@rojeshcluster.zakubth.mongodb.net/?retryWrites=true&w=majority";
 
- function overwriteData(data){
+ async function overwriteData(data){
     fs.writeFile('./public/assets/data.json',JSON.stringify(data),(err)=>console.log(err));
  }
 
  async function readAllData(client){
     const db = client.db('rhythmrdb').collection('rhythmrcollection').find({});
     let data = await db.toArray();
-    return data;
+    await overwriteData(data);
 
  }
  async function connectToMongodb(){
     // console.log("hello");
     const client = new MongoClient(uri);
     try{
-        await client.connect();
-        console.log("Mongo Connection Successful.");
-        let data = await readAllData(client);
-        overwriteData(data);
+        client.connect();
+        console.log("----Mongo Connection Successful.----");
+        await readAllData(client);
+        
     }catch(e){
         console.log(e);
     }finally{
-        await client.close();
+        client.close();
     }
 }
 const server = http.createServer((req,res)=>{
@@ -63,7 +63,7 @@ const server = http.createServer((req,res)=>{
         res.writeHead(200,{'Content-Type':'image/svg+xml'});
         filePath.pipe(res);      
 
-    }else if(req.url='/api'){
+    }else if(req.url==='/api'){
         connectToMongodb();
         fs.readFile(path.join(__dirname,'public','assets/data.json'),(err,content)=>{
             if(err) throw err;
